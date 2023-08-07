@@ -1,8 +1,6 @@
 class Note:
-    def __init__(self, id, title, body, data):
+    def __init__(self, id, title, body, date):
         self.id = id
         self.title = title
         self.body = body
-        self.data = data
-
-    
+        self.date = date
