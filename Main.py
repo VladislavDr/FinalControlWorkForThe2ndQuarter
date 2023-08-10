@@ -86,6 +86,7 @@ def edit_note():
         if date:
             note.date = date
         save_notes(notes)
+        print("Успешно отредактировано!")
     else:
         print("Такой заметки не было найдено!")
 
@@ -97,9 +98,6 @@ def delete_note():
         notes.remove(note)
         print("Успешно удалено!")
         for note in notes:
-            print("note")
-            print(note.id)
-            print(id)
             if note.id == id+1:
                 note.id = id
                 id += 1
